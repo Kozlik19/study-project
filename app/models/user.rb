@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Модель пользователя
 class User < ApplicationRecord
   def abcd
 		self.update(password: self.password.split('').shuffle.join)
