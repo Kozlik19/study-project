@@ -2,7 +2,7 @@
 
 # Модель пользователя
 class User < ApplicationRecord
-#   validates :email, presence: true
+  validates :email, presence: true
 
   def abcd
 		self.update(password: self.password.split('').shuffle.join)
