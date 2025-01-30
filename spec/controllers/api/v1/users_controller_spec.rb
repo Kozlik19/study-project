@@ -1,14 +1,17 @@
 require 'rails_helper'
 
-RSpec.describe 'Api::V1::UsersControllers', type: :request do
+RSpec.describe Api::V1::UsersController, type: :controller do
   describe 'show' do
-    subject { get :show, params: { id: 1 } }
+    subject { json_response }
 
-    let!(:user) { User.create(email: 'admin@gmail.com', password: '1234') }
+    let!(:send_request) { get :show, params: { id: user.id } }
+
+    let!(:user) { User.create(email: 'barabah@mail.ru', password: '1234') }
 
     let!(:data_expected) do
       {
-        email: 'admin@gmail.com',
+        id: user.id,
+        email: 'barabah@mail.ru',
         password: '1234'
       }
     end
