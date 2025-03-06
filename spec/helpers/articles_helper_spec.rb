@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Добавление помошника рельс
 require 'rails_helper'
 
 # Specs in this file have access to a helper object that includes
