@@ -5,7 +5,7 @@ class AddDeviseToUsers < ActiveRecord::Migration[7.1]
   def self.up
     change_table :users do |t|
       ## Database authenticatable
-      t.string :encrypted_password, null: false, default: ""
+      t.string :encrypted_password, null: false, default: ''
 
       # Trackable
       t.integer  :sign_in_count, default: 0, null: false
