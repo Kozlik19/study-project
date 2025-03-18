@@ -74,3 +74,7 @@ end
 gem 'device'
 
 gem 'devise', '~> 4.9'
+
+gem 'faker'
+
+gem 'factory_bot_rails'

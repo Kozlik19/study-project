@@ -30,4 +30,16 @@ RSpec.describe PostsController, type: :controller do
       expect { post :create, params: { post: { title: 'New Post', body: 'This is a new post.' } } }.to change(Post, :count).by(1)
     end
   end
+  RSpec.describe Article, type: :model do
+    it 'is valid with valid attributes' do
+      user = FactoryBot.create(:user)
+      article = FactoryBot.build(:article, user: user)
+      expect(article).to be_valid
+    end
+    it 'is not valid without a title' do
+      user = FactoryBot.create(:user)
+      article = FactoryBot.build(:article, title: nil, user: user)
+      expect(article).not_to be_valid
+    end
+  end
 end
