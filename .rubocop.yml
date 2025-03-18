@@ -12,11 +12,12 @@ Style/AsciiComments:
   Enabled: false
 
 Layout/LineLength:
-  Max: 120
+  Max: 200
   Exclude:
     - '**/spec/**/*.rb'
 
 Metrics/BlockLength:
+  Max: 20
   Exclude:
     - '**/spec/**/*.rb'
     - 'app/admin/*.rb'

@@ -27,9 +27,7 @@ RSpec.describe PostsController, type: :controller do
 
   describe 'POST #create' do
     it 'creates a new post' do
-      expect {
-        post :create, params: { post: { title: 'New Post', body: 'This is a new post.' } }
-      }.to change(Post, :count).by(1)
+      expect { post :create, params: { post: { title: 'New Post', body: 'This is a new post.' } } }.to change(Post, :count).by(1)
     end
   end
 end
