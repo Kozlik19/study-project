@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Модуль контроллер спек помошник
+# Помошник рельс
 require 'rails_helper'
 
 RSpec.describe 'articles/index.html.erb', type: :view do

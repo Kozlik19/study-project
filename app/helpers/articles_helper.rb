@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-# Помошник рельс
+# Помошник артиклей
 module ArticlesHelper
 end

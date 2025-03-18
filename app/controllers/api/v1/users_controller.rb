@@ -2,7 +2,7 @@
 
 module Api
   module V1
-    # Класс пользователь контроллер
+    # Создание класса контроллеров пользователей
     class UsersController < ApplicationController
       def show
         user = User.find(params[:id])

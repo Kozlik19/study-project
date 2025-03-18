@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Помошник рельс
+# Добавление помошника рельс
 require 'rails_helper'
 
 RSpec.describe Api::V1::UsersController, type: :controller do
